@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DeMapGS: Simultaneous Mesh Deformation and Surface Attribute Mapping via Gaussian Splatting">
+    <meta name="keywords" content="Gaussian Splatting, Mesh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeMapGS: Simultaneous Mesh Deformation and Surface Attribute Mapping via Gaussian Splatting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Academicons for academic icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-weight: 600; font-family: 'Google Sans', sans-serif;">DeMapGS: Simultaneous Mesh Deformation and Surface Attribute Mapping via Gaussian Splatting</h1>
+        <p style="text-align: center; font-size: 1.2em; margin-bottom: 0.2em; font-family: 'Google Sans', sans-serif;">
+            Shuyi Zhou<sup>1</sup>, Shengze Zhong<sup>2</sup>, Kenshi Takayama<sup>2</sup>, Takafumi Taketomi<sup>2</sup>, Takeshi Oishi<sup>1</sup>
+        </p>
+        <p style="text-align: center; color: #555; margin-top: 0;font-size: 1.2em;font-family: 'Google Sans', sans-serif; ">
+            <sup>1</sup>The University of Tokyo &nbsp;&nbsp;&nbsp; <sup>2</sup>CyberAgent
+        </p>
+        <p style="text-align: center; font-weight: bold; margin: 20px 0;font-size: 1.2em;font-family: 'Google Sans', sans-serif;">
+            Siggraph Asia 2025
+        </p>
+        <div class="links">
+            <button class="btn btn-custom"><i class="ai ai-arxiv"></i> ArXiv</button>
+            <button class="btn btn-custom"><i class="fab fa-github"></i> Code (Coming Soon)</button>
+        </div>
+        <section class="video">
+            <h2 style=" margin-bottom: 50px; text-align: center;">Fast Forward Video</h2>
+             <div style="display: flex; justify-content: center;">
+                <iframe referrerpolicy="strict-origin-when-cross-origin" width="720" height="400" src="https://www.youtube.com/embed/ahnoNwaP2xQ?si=FlexJAxvReXwzCja" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             </div>
+            
+
+        </section>
+        <section style="font-size: 1.2em;font-family: 'Google Sans', sans-serif; margin-top: 50px;">
+            <h2 style=" margin-bottom: 50px; text-align: center;">Introduction</h2>
+                <p style="font-weight: 100;">
+                We propose DeMapGS, a structured Gaussian Splatting framework that jointly optimizes deformable surfaces and surface-attached 2D Gaussian splats.
+                By anchoring splats to a deformable template mesh, our method overcomes topological inconsistencies and enhances editing flexibility, addressing limitations of prior Gaussian Splatting methods that treat points independently.
+                The unified representation in our method supports extraction of high-fidelity diffuse, normal, and displacement maps, enabling the reconstructed mesh to inherit the photorealistic rendering quality of Gaussian Splatting.
+                To support robust optimization, we introduce a gradient diffusion strategy that propagates supervision across the surface, along with an alternating 2D/3D rendering scheme to handle concave regions.
+                Experiments demonstrate that DeMapGS achieves state-of-the-art mesh reconstruction quality and enables downstream applications for Gaussian splats such as editing and cross-object manipulation through a shared parametric surface.            </p>
+                <img src="fig/teaser.png" alt="Teaser Image" class="teaser">
+            </section>      
+             <section class="video" style="margin-top: 50px;">
+            <h2 style=" margin-bottom: 50px; text-align: center;">Video</h2>
+             <div style="display: flex; justify-content: center;">
+                <iframe referrerpolicy="strict-origin-when-cross-origin" width="720" height="400" src="https://www.youtube.com/embed/kec0RfZ_FCw?si=HG-c91BhhpxrZNAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        <section  style="font-size: 1.2em;font-family: 'Google Sans', sans-serif; margin-top:50px;">
+            <h2 style="text-align: center;">BibTeX</h2>
+            <div class="bibtex">
+                <pre style="white-space: pre; overflow-x: auto; max-width: 100%;"><code>@inproceedings{zhou2025demapgs,
+    title={DeMapGS: Simultaneous Mesh Deformation and Surface Attribute Mapping via Gaussian Splatting},
+    author={Zhou, Shuyi and Zhong, Shengze and Takayama, Kenshi and Taketomi, Takafumi and Oishi, Takeshi},
+    booktitle={ACM SIGGRAPH 2025 conference papers},
+    year={2025}
+}</code></pre>
+            </div>
+        </section>
+    </div>
+    <script src="static/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
