@@ -36,17 +36,10 @@ h1 {
 	align-items: center;
 	gap: 9px;
 	text-decoration: none;
-	color: #222;
 	font-weight: 500;
 	font-size: 1.08rem;
 	padding: 10px 20px;
 	border-radius: 6px;
-	transition: background 0.15s, color 0.15s;
-}
-
-.links a:hover {
-	background: #e3e7f0;
-	color: #0056b3;
 }
 
 .links i {
@@ -163,5 +156,10 @@ h1 {
 
 .btn-custom:hover {
 	background: darkslategrey;	
+	color: white;
+}
+
+.btn-custom:active {
+	background: darkslategrey;
 	color: white;
 }
